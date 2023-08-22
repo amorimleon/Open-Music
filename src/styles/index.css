@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: var(--radius-1);
+  color: var(--color-grey-1);
+}
+
+button {
+  padding: 0.8rem;
+  text-align: center;   
+  cursor: pointer;
+  background-color: var(--color-grey-8);
+}
+
+body {
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main{
+  width: 100%;
+}
+header {
+  width: 641px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33.89px;
+}
+.dark__mode {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey-8);
+}
+img {
+  width: 36px;
+  height: 36px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 1rem 0rem;
+}
+.manage__filter{
+  width: 644px;
+  margin: auto;
+}
+.manage__filter p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+.manage__filter h2 {
+  margin-bottom: 1rem;
+}
+
+.buttons__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.button__category {
+  border: 1px solid var(--color-grey-9);
+}
+.button__category:focus {
+  border: 1px solid var(--color-brand-1);
+}
+
+.div__range {
+  width: 641px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.div_preco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input__range {
+  width: 641px;
+  height: 6px;
+  background-color: var(--color-brand-1);
+}
+.input__range::-moz-range-progress {
+  background-color: var(--color-brand-1);
+}
+
+.renderCards {
+  width: 644px;
+  height: auto;
+  margin: auto;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+.album__card {
+  width: 308px;
+  height: 256px;
+  margin: 4px;
+
+  box-shadow: 0px 0px 4px 1px rgb(142 141 141);
+  margin-top: 2rem;
+  background-color: var(--color-grey-8);
+}
+.album__card:hover{
+  background-color: var(--color-grey-7);
+}
+
+.img-container{
+  width: 308px;
+  height: 113px;
+  overflow: hidden;
+}
+.img__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 4px 0 0 ;
+  transition: transform 0.2s;
+}
+.album__card:hover .img__card{
+  transform:scale(1.1) ;
+}
+
+.band__name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.album__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.album__price {
+  font-size: 14px;
+  font-weight: 600;
+}
+.buy__button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: var(--color-grey-7);
+  color: var(--color-grey-2);
+}
+.buy__button:hover{
+  background-color: var(--color-grey-8);
+}
+.album__title,
+.band__name,
+.menssage {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.span__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 36px;
+ height: 36px;
+}
+
+
+.selected-button {
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-8);
+}
+
